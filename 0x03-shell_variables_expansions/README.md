@@ -66,12 +66,4 @@
 
 
 
-#!/bin/bash printf "%o\n"
-
-You can't use 'macro parameter character #' in math mode
-
-$((5#$(echo
-
-You can't use 'macro parameter character #' in math mode
-
-$WATER | tr 'water' '01234') + 5#$(echo $STIR | tr 'stir.' '01234'))) | tr '01234567' 'bestchol'
+#!/bin/bash printf "%o\n" $((5#$(echo $WATER | tr 'water' '01234') + 5#$(echo $STIR | tr 'stir.' '01234'))) | tr '01234567' 'bestchol'
